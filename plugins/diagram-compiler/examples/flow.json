@@ -1,0 +1,25 @@
+{
+  "spec_version": "1.0",
+  "diagram_type": "flow",
+  "title": "Single Agent Architecture",
+  "subtitle": "One reasoning loop: plan, call a tool, check, answer.",
+  "theme": "clean-light",
+  "canvas": { "aspect": "auto" },
+  "nodes": [
+    { "id": "q", "kind": "actor", "label": "User Query", "icon": "message-square" },
+    { "id": "llm", "kind": "model", "label": "Reasoning LLM", "bullets": ["Plan", "Select tool"] },
+    { "id": "tool", "kind": "box", "label": "Web Search / DB", "icon": "search" },
+    { "id": "mem", "kind": "store", "label": "Memory", "sublabel": "past turns" },
+    { "id": "out", "kind": "chip", "label": "Final report", "emphasis": "primary" }
+  ],
+  "edges": [
+    { "from": "q", "to": "llm" },
+    { "from": "llm", "to": "tool", "label": "call" },
+    { "from": "tool", "to": "llm", "style": "dashed", "label": "need more?", "kind": "loop" },
+    { "from": "llm", "to": "mem", "arrow": "both" },
+    { "from": "llm", "to": "out" }
+  ],
+  "groups": [{ "id": "agent", "label": "Agent", "members": ["llm", "tool", "mem"], "style": "dashed-box" }],
+  "annotations": [{ "target": "tool", "text": "Tools run outside the model" }],
+  "footer": "diagram-compiler example"
+}

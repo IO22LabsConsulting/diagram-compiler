@@ -1,0 +1,44 @@
+{
+  "spec_version": "1.0",
+  "diagram_type": "grid",
+  "title": "Four Ways to Ground an LLM",
+  "subtitle": "Pick the lightest technique that gives the model the facts it needs.",
+  "columns": 2,
+  "panels": [
+    {
+      "id": "rag", "title": "Retrieval (RAG)", "badge": "1",
+      "diagram": {
+        "diagram_type": "flow",
+        "nodes": [
+          { "id": "q", "kind": "chip", "label": "Question" },
+          { "id": "idx", "kind": "store", "label": "Vector index" },
+          { "id": "llm", "kind": "model", "label": "LLM" }
+        ],
+        "edges": [{ "from": "q", "to": "idx" }, { "from": "idx", "to": "llm", "label": "top k" }],
+        "hints": { "direction": "LR" }
+      },
+      "caption": "Fetch relevant passages at question time."
+    },
+    {
+      "id": "tools", "title": "Tool calls", "badge": "2",
+      "diagram": {
+        "diagram_type": "flow",
+        "nodes": [
+          { "id": "llm", "kind": "model", "label": "LLM" },
+          { "id": "api", "kind": "box", "label": "Live API", "icon": "api" }
+        ],
+        "edges": [{ "from": "llm", "to": "api", "arrow": "both" }],
+        "hints": { "direction": "LR" }
+      },
+      "caption": "Let the model ask systems of record directly."
+    },
+    {
+      "id": "ctx", "title": "Long context", "badge": "3",
+      "bullets": ["Paste the whole document", "Simple, no index to run", "Cost grows with every call"]
+    },
+    {
+      "id": "ft", "title": "Fine-tuning", "badge": "4",
+      "bullets": ["Bake stable knowledge into weights", "Best for style and format", "Slow to update"]
+    }
+  ]
+}

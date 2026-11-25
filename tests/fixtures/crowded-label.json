@@ -1,0 +1,18 @@
+{
+  "spec_version": "1.0", "diagram_type": "flow", "title": "Crowded label",
+  "hints": { "direction": "TB" },
+  "nodes": [
+    { "id": "watch", "label": "Watcher", "sublabel": "decides when to leave the room" },
+    { "id": "check", "label": "Checker", "sublabel": "asks the desk every minute or so" },
+    { "id": "exit", "label": "Leaver", "sublabel": "writes it down when told, not done" },
+    { "id": "book", "kind": "store", "label": "Ledger and archive", "sublabel": "then a slow call elsewhere" },
+    { "id": "desk", "kind": "actor", "label": "Front desk", "sublabel": "nothing is ever left waiting here" }
+  ],
+  "edges": [
+    { "from": "watch", "to": "exit", "label": "decision" },
+    { "from": "exit", "to": "desk", "label": "request" },
+    { "from": "exit", "to": "book", "label": "value at the first look" },
+    { "from": "check", "to": "book", "label": "later corrected" }
+  ],
+  "groups": [{ "id": "g", "label": "Afterwards", "members": ["watch", "check", "exit", "book"] }]
+}

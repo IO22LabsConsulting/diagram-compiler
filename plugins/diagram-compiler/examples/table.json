@@ -1,0 +1,13 @@
+{
+  "spec_version": "1.0",
+  "diagram_type": "table",
+  "title": "Three ways to stop a deploy",
+  "subtitle": "What each one blocks, and how to undo it.",
+  "columns": ["Mechanism", "Who can use it", "What it blocks", "How to undo"],
+  "rows": [
+    { "cells": ["Pause button", "Any engineer", "New releases only; running ones finish", "Press resume"], "color": "green" },
+    { "cells": ["Freeze window", "Release manager", "Every release for a set period", "Wait for the window to end, or lift it with a reason"] },
+    { "cells": ["Kill switch", "On-call lead", "New releases and anything in progress", "Two people must approve"], "color": "pink" }
+  ],
+  "footer": "A table suits facts that share the same questions."
+}

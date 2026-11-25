@@ -1,0 +1,19 @@
+{
+  "name": "diagram-compiler",
+  "version": "0.1.0",
+  "description": "Draw technical diagrams from a typed description, check every box and arrow against the code it cites, and keep them current by reading only what changed.",
+  "author": {
+    "name": "ayodm",
+    "url": "https://github.com/ayodm"
+  },
+  "homepage": "https://github.com/ayodm/diagram-compiler",
+  "repository": "https://github.com/ayodm/diagram-compiler",
+  "license": "MIT",
+  "keywords": [
+    "diagram",
+    "architecture",
+    "sequence-diagram",
+    "documentation",
+    "svg"
+  ]
+}

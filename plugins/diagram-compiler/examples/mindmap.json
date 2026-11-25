@@ -1,0 +1,16 @@
+{
+  "spec_version": "1.0",
+  "diagram_type": "mindmap",
+  "title": "AI Evals at a Glance",
+  "subtitle": "What to measure before you ship a model-backed feature.",
+  "root": {
+    "label": "AI Evals",
+    "icon": "flask-conical",
+    "children": [
+      { "label": "Data", "icon": "table", "children": [{ "label": "Golden set" }, { "label": "Real traffic samples" }, { "label": "Edge cases" }] },
+      { "label": "Graders", "icon": "scale", "children": [{ "label": "Exact match" }, { "label": "Rubric with model grader" }, { "label": "Human review" }] },
+      { "label": "Metrics", "icon": "chart", "children": [{ "label": "Pass rate" }, { "label": "Cost per task" }, { "label": "Latency" }] },
+      { "label": "Process", "icon": "workflow", "children": [{ "label": "Run on every change" }, { "label": "Track regressions" }] }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "diagram-compiler",
+  "description": "Draw, source-check and incrementally update technical diagrams with Claude Code.",
+  "owner": {
+    "name": "ayodm",
+    "url": "https://github.com/ayodm"
+  },
+  "plugins": [
+    {
+      "name": "diagram-compiler",
+      "source": "./plugins/diagram-compiler",
+      "description": "Draw, source-check and incrementally update technical diagrams.",
+      "license": "MIT"
+    }
+  ]
+}

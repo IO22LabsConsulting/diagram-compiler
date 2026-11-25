@@ -1,0 +1,13 @@
+{
+  "spec_version": "1.0",
+  "diagram_type": "tree",
+  "title": "Platform Team",
+  "root": {
+    "label": "Head of Platform",
+    "children": [
+      { "label": "Infrastructure", "color": "blue", "children": [{ "label": "Compute" }, { "label": "Networking" }] },
+      { "label": "Data", "color": "amber", "children": [{ "label": "Pipelines" }, { "label": "Warehouse" }] },
+      { "label": "Developer Experience", "color": "violet", "children": [{ "label": "CI and tooling" }] }
+    ]
+  }
+}

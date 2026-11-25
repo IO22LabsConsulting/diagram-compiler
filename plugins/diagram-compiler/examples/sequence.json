@@ -1,0 +1,23 @@
+{
+  "spec_version": "1.0",
+  "diagram_type": "sequence",
+  "title": "Placing an order",
+  "subtitle": "What happens between the click and the confirmation.",
+  "actors": [
+    { "id": "user", "label": "Customer", "kind": "actor", "icon": "user" },
+    { "id": "web", "label": "Web app" },
+    { "id": "pay", "label": "Payments", "sublabel": "third party", "color": "amber" },
+    { "id": "db", "label": "Orders", "kind": "store" }
+  ],
+  "steps": [
+    { "from": "user", "to": "web", "label": "Place order" },
+    { "from": "web", "to": "web", "label": "Check the basket", "detail": "prices, stock" },
+    { "divider": "Money" },
+    { "from": "web", "to": "pay", "label": "Charge the card" },
+    { "from": "pay", "to": "web", "label": "Approved", "kind": "reply" },
+    { "from": "web", "to": "db", "label": "Save the order" },
+    { "from": "web", "to": "user", "label": "Confirmation", "kind": "reply" },
+    { "from": "web", "to": "pay", "label": "Send receipt request", "detail": "not waited on", "kind": "async" }
+  ],
+  "footer": "Dashed arrows are replies; an open arrowhead is not waited on."
+}
