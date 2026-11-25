@@ -9,7 +9,7 @@ draws it as SVG and PNG, and checks it. Six diagram types: flow, sequence, table
 ## Setup
 
 ```
-/plugin install diagram-compiler --marketplace ayodm/diagram-compiler
+/plugin install diagram-compiler --marketplace IO22LabsConsulting/diagram-compiler
 ```
 
 Needs Node 22.18 or newer. Claude Code installs the plugin's five npm dependencies when the plugin is installed.
@@ -21,6 +21,6 @@ Ask Claude for a diagram ("draw the architecture of this repo", "draw the login 
 while the plugin is enabled: `diagram render spec.json -o out/`, `diagram verify spec.json --root .`,
 `diagram stamp`, `diagram stale`.
 
-Full documentation, measured results and limits: https://github.com/ayodm/diagram-compiler
+Full documentation, measured results and limits: https://github.com/IO22LabsConsulting/diagram-compiler
 
 Made by IO22 LLC, https://io22labs.com/. MIT licensed.

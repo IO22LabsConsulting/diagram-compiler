@@ -25,10 +25,10 @@ lays it out, draws it and checks it. On a given machine, the same description al
 Needs [Claude Code](https://claude.com/claude-code) and Node 22.18 or newer.
 
 ```
-/plugin install diagram-compiler --marketplace ayodm/diagram-compiler
+/plugin install diagram-compiler --marketplace IO22LabsConsulting/diagram-compiler
 ```
 
-On Claude Code older than 2.1.275, add the marketplace first: `/plugin marketplace add ayodm/diagram-compiler`, then
+On Claude Code older than 2.1.275, add the marketplace first: `/plugin marketplace add IO22LabsConsulting/diagram-compiler`, then
 `/plugin install diagram-compiler@diagram-compiler`.
 
 Claude Code installs the plugin's five npm dependencies when it installs the plugin. Then ask for a diagram, or run
