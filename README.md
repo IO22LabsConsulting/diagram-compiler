@@ -4,7 +4,7 @@ A Claude Code plugin that draws technical diagrams, checks them against the code
 current as the code changes.
 
 Claude writes a short description of what to draw: the boxes, the arrows and the words, never a position. A program
-lays it out, draws it and checks it. The same description always produces the same picture.
+lays it out, draws it and checks it. On a given machine, the same description always produces the same file.
 
 ![A sequence diagram drawn by the plugin](docs/examples/sequence.png)
 
@@ -90,7 +90,8 @@ seven-point rubric in `plugins/diagram-compiler/skills/diagram/rubric.md`.
 - **Text.** Latin and Cyrillic are drawn, and Greek in the main font. Chinese, Japanese, Korean, Arabic and Hebrew
   are not.
 - **Not compared with other diagram tools.** No such test has been run.
-- **Tested on macOS only so far.**
+- **Tested on macOS and Linux (arm64 and x64).** Windows is untested. Output is identical run to run on one machine;
+  across processor types the pictures match but the files can differ in their last decimal places.
 
 ## Development
 
