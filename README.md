@@ -64,8 +64,9 @@ Exit codes: 0 ok, 1 invalid description, 2 check errors, 3 render failure, 4 a d
 4. After code changes, run `diagram stale ... --fix`, or ask Claude to update the diagrams.
 
 `diagram hook` prints a git post-commit hook that runs step 4 after each commit. It applies the repairs that need no
-reading and prints a notice when something needs review. It starts nothing by itself. If you set `DIAGRAM_AUTO=1`
-it starts Claude Code in the background to do the update; it never commits. Read the script before installing it.
+reading and prints a notice when something needs review. It starts nothing by itself. `diagram hook --auto` prints a
+version that also starts Claude Code in the background to do the update; it never commits. The hook reads nothing
+from your environment: what it does is fixed when you generate it. Read the script before installing it.
 
 ## How well it works
 

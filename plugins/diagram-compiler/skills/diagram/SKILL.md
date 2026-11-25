@@ -283,8 +283,10 @@ it asks for whole changed files to be read.
 
 To run this after every commit, and only when the user asks for it: `diagram hook > .git/hooks/post-commit` and
 `chmod +x .git/hooks/post-commit` in their repository. The hook applies the no-reading repairs at once and prints a
-notice when something needs review. It starts nothing by itself; if the user sets `DIAGRAM_AUTO=1` it starts Claude
-Code in the background to do the update, and never commits. Tell the user what the hook does before installing it.
+notice when something needs review. It starts nothing by itself. Only if the user asks for unattended updates,
+generate it with `diagram hook --auto`: that version starts Claude Code in the background to do the update, and never
+commits. `--dir <folder>` sets where the diagrams live (default `docs/diagrams`). Tell the user what the hook does
+before installing it.
 
 ## Icons
 

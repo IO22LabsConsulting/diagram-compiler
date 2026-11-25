@@ -1,6 +1,6 @@
 {
   "name": "diagram-compiler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Draw technical diagrams from a typed description, check every box and arrow against the code it cites, and keep them current by reading only what changed.",
   "author": {
     "name": "ayodm",
