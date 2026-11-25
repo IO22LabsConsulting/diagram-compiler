@@ -110,3 +110,5 @@ gives a fix phrased as an edit to the description.
 ## Licence
 
 MIT. Third-party notices are in `NOTICE.md`.
+
+Made by [IO22 LLC](https://io22labs.com/).

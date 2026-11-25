@@ -1,12 +1,12 @@
 {
   "name": "diagram-compiler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Draw technical diagrams from a typed description, check every box and arrow against the code it cites, and keep them current by reading only what changed.",
   "author": {
-    "name": "ayodm",
-    "url": "https://github.com/ayodm"
+    "name": "IO22 LLC",
+    "url": "https://io22labs.com/"
   },
-  "homepage": "https://github.com/ayodm/diagram-compiler",
+  "homepage": "https://io22labs.com/",
   "repository": "https://github.com/ayodm/diagram-compiler",
   "license": "MIT",
   "keywords": [

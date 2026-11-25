@@ -22,3 +22,5 @@ while the plugin is enabled: `diagram render spec.json -o out/`, `diagram verify
 `diagram stamp`, `diagram stale`.
 
 Full documentation, measured results and limits: https://github.com/ayodm/diagram-compiler
+
+Made by IO22 LLC, https://io22labs.com/. MIT licensed.

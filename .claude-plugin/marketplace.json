@@ -2,8 +2,8 @@
   "name": "diagram-compiler",
   "description": "Draw, source-check and incrementally update technical diagrams with Claude Code.",
   "owner": {
-    "name": "ayodm",
-    "url": "https://github.com/ayodm"
+    "name": "IO22 LLC",
+    "url": "https://io22labs.com/"
   },
   "plugins": [
     {

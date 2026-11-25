@@ -1,6 +1,6 @@
 {
   "name": "diagram-compiler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "description": "Typed diagram spec in, checked SVG and PNG out. A Claude Code plugin.",
@@ -26,5 +26,7 @@
     "fast-check": "4.11.0",
     "typescript": "7.0.2",
     "vitest": "5.1.1"
-  }
+  },
+  "author": "IO22 LLC (https://io22labs.com/)",
+  "homepage": "https://github.com/ayodm/diagram-compiler"
 }
